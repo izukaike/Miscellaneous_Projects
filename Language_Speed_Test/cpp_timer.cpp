@@ -6,7 +6,7 @@ int main() {
     auto start_time = std::chrono::high_resolution_clock::now();
 
     // Perform the loop
-    double variable = 0;
+    volatile double variable = 0;
     for (int i = 0; i < 1000000; ++i) {
         variable = variable + 1.0; // Increment variable by 1
     }
